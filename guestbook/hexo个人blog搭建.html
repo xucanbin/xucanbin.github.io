@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>linux菜鸟:ACan的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: 个人blog搭建（纯属笔记，不做任何解释）date: 2018-07-22 12:35:00 tags:==windows下搭建hexo== 大致浏览即可，细节操作在下面的总结那一.环境准备 1.安装node.js(npm也在安装包中)（默认安装即可，一路Next。。）    安装包：https://nodejs.org/en/ 为什么要搭建 Node.js 环境？ - 因为 He">
+<meta property="og:type" content="website">
+<meta property="og:title" content="linux菜鸟:ACan的博客">
+<meta property="og:url" content="http://yoursite.com/guestbook/hexo个人blog搭建.html">
+<meta property="og:site_name" content="linux菜鸟:ACan的博客">
+<meta property="og:description" content="title: 个人blog搭建（纯属笔记，不做任何解释）date: 2018-07-22 12:35:00 tags:==windows下搭建hexo== 大致浏览即可，细节操作在下面的总结那一.环境准备 1.安装node.js(npm也在安装包中)（默认安装即可，一路Next。。）    安装包：https://nodejs.org/en/ 为什么要搭建 Node.js 环境？ - 因为 He">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-22T04:53:29.998Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux菜鸟:ACan的博客">
+<meta name="twitter:description" content="title: 个人blog搭建（纯属笔记，不做任何解释）date: 2018-07-22 12:35:00 tags:==windows下搭建hexo== 大致浏览即可，细节操作在下面的总结那一.环境准备 1.安装node.js(npm也在安装包中)（默认安装即可，一路Next。。）    安装包：https://nodejs.org/en/ 为什么要搭建 Node.js 环境？ - 因为 He">
+  
+    <link rel="alternate" href="/atom.xml" title="linux菜鸟:ACan的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">linux菜鸟:ACan的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">TO:一个正在学习的系统架构师</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/guestbook/hexo个人blog搭建.html" class="article-date">
+  <time datetime="2018-07-22T05:01:13.372Z" itemprop="datePublished">2018-07-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 个人blog搭建（纯属笔记，不做任何解释）<br>date: 2018-07-22 12:35:00</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>==<strong>windows下搭建hexo</strong>==</p>
+<p>大致浏览即可，细节操作在下面的总结那<br>一.环境准备</p>
+<p>1.安装node.js(npm也在安装包中)（默认安装即可，一路Next。。）<br>    安装包：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<pre><code>为什么要搭建 Node.js 环境？ - 因为 Hexo 博客系统是基于 Node.js 编写的
+</code></pre><p>   检查安装是否成功,出现版本号则说明 Node.js 环境配置成功<br>    node -v、npm -v</p>
+<p>2.安装git（默认安装即可，也是一路Next。。）<br>    安装包：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a></p>
+<pre><code>为什么要搭建 Git 环境？ - 因为需要把本地的网页和文章等提交到 GitHub 上
+</code></pre><p>   检查安装是否成功,出现版本号则说明 git 环境配置成功<br>    git -v<br>3.安装控制台Cmder（默认安装即可）<br>    安装包：<a href="http://cmder.net/" target="_blank" rel="noopener">http://cmder.net/</a></p>
+<p>#个人使用爱好，可不装，用Windows自带cmd即可</p>
+<p>4.安装Sublime Text 3（默认安装即可）<br>    安装包：<a href="https://www.sublimetext.com/3" target="_blank" rel="noopener">https://www.sublimetext.com/3</a></p>
+<p>#只要是支持.md的文本工具即可</p>
+<p>二.GitHub的注册和配置<br>    官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>1.拥有一个GitHub账号，没有的话去官网注册一下，很简单就不多说了<br>    官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><br>2.在GitHub创建一个仓库</p>
+<h1 id="yourname-必须是你的用户名。"><a href="#yourname-必须是你的用户名。" class="headerlink" title="yourname 必须是你的用户名。"></a>yourname 必须是你的用户名。</h1><pre><code>图片1（待上传）
+图片2（待上传）
+ .
+ .
+ .
+</code></pre><p>3.配置SSH密钥</p>
+<p>   1）在桌面空白处鼠标右键打开Git bash here,键入命令（$ 无需键入..）<br>    $ ssh-keygen -t rsa -C “your’s emaill address”<br>   引号内填入你注册时所用的邮箱，回车<br>   显示你ssh密钥生成后保存的目录，直接回车确认（记住目录名，后面要找它拿东西的）<br>   会提示你设置密码（需要输入两次，密码看不见的）设置完密码之后<br>   会生成两个文件&lt;id_rsa&gt;、&lt;id_rsa.pub&gt;<br>   前往目录寻找文件&lt;id_rsa.pub&gt;，使用sublime text3 打开，并复制所有内容<br>   2）将SSH密钥存入GitHub</p>
+<h1 id="ssh-T-git-github-com-选择性设置，用于设置自动填入密码"><a href="#ssh-T-git-github-com-选择性设置，用于设置自动填入密码" class="headerlink" title="$ ssh -T git@github.com(选择性设置，用于设置自动填入密码)"></a>$ ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>(选择性设置，用于设置自动填入密码)</h1><pre><code>图片1（待上传）
+图片2（待上传）
+ .
+ .
+</code></pre><p>三.环境配置完成，开始安装Hexo，以及利用hexo建立本地网站</p>
+<p>1.win+r 打开Cmder控制台，键入命令</p>
+<pre><code>$ npm install -g hexo-cli
+</code></pre><p>  会报错，正常现象<br>    npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\chokidar\node_modules\fsevents):<br>    npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for <a href="mailto:fsevents@1.0.17" target="_blank" rel="noopener">fsevents@1.0.17</a>: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”})<br>关于这个两个报错：fsevent是mac osx系统的，你是在win或者Linux下使用了 所以会有警告，忽略即可</p>
+<p>   安装需要点时间，请耐心等待，安装成功后会有提示<br>    $ hexo -v<br>   检查安装是否成功,出现版本号则说明 hexo 安装成功</p>
+<p>2.在任意一个分区创建任意一个文件夹，并该目录建立网站</p>
+<p>#路径中不要有中文<br>    eg:创建test文件夹，路径为F:\test<br>git<br>    hexo init f:\test         创建一个网站，可能需要等待一小会，耐心等待<br>  成功提示：INFO  Start blogging with Hexo!</p>
+<p>3.配置test目录下的_config.yml，生成静态文件<br>    配置_config.yml，用sublime text3 打开编辑并保存<br>  直接到文本尾部</p>
+<pre><code># Deployment
+   deploy:
+     type: git
+     repository: https://github.com/xucanbin/xucanbin.github.io.git
+     branch: master
+
+$ npm install hexo-deployer-git --save         安装一个插件
+</code></pre><p>  在test目录中，鼠标右键打开git bash  </p>
+<pre><code>$ ls            检查下目录下是不是出现多个文件，都是用于搭建网站的，这就是hexo的强大之处了
+$ hexo g        生成静态文件。
+$ hexo s        启动服务器。默认情况下，访问网址为： http://localhost:4000/
+</code></pre><p>   尝试能否访问<a href="http://localhost:4000/，当然这只是本地的网页，没什么用。" target="_blank" rel="noopener">http://localhost:4000/，当然这只是本地的网页，没什么用。</a><br>   成功则如图<br>   由于source目录下自带一篇hello world文章，所以你网页上自动生成了。</p>
+<p>四.配置test目录下的_config.yml</p>
+<p>五.将hexo建立网站的目录（亦可称为本地仓库）与github同步</p>
+<p> 在test目录下，新建一个README.md，并鼠标右键打开git bash<br> 并新建一个README.md ，用sublime text 3 打开编辑随意写点东西，后面会用到</p>
+<p>将当前目录转变成一个 Git 仓库</p>
+<pre><code>$ git init 
+</code></pre><p>配置你个人的用户名称和电子邮件地址。这两条配置很重要，每次 Git 提交时都会引用这两条信息</p>
+<pre><code>$ git config --global user.name &quot;Your&apos;s name&quot;           引号中填自己的GitHub账号
+$ git config --global user.email &quot;Your&apos;s email address&quot; 引号中填注册GitHub的邮箱
+$ git add README.md       将README.md添加到索引
+
+$ git commit -m &quot;first commit&quot;
+添加远程仓库
+$ git remote add origin git@github.com:yourname/yourname.github.io.git
+$ ssh -T git@github.com
+$ git push -u origin master
+
+$ hexo g
+$ hexo d
+</code></pre><p>二次总结</p>
+<p>关于搭建个人博客的事情我自己总结了几点</p>
+<p>hexo 是帮你搭建了一个本地网站</p>
+<p>git 是用于配置giuhub上的仓库以及ssh密钥</p>
+<p>node.js的话，主要是其环境下的npm，依赖npm去安装hexo </p>
+<p>我们创建自己的博客网站 其实就是把hexo创建的本地网站 所生成的静态页面部署到GitHub上<br>请准备好<git>好&lt;node.js&gt;环境，才能开始下列操作<br>实现部署的前提，拥有一个github账号以及在github上创建一个库命名格式为&lt;账号名.github.io.git&gt;</git></p>
+<p>#命名格式必须遵守，不然无法成功（目前我是找不到其他方法啦）<br>1.安装并使用hexo,生成本地网站之后，配置本地网站中的_config.yml</p>
+<pre><code>$ npm install -g hexo-cli   (还未分清楚用cmd还是git-bash安装，待测试)
+$ hexo --version    
+</code></pre><p>2.使用hexo建立本地网站</p>
+<pre><code>$ hexo init &lt;目录名&gt;         亦可进入目录下打开git-bash键入
+</code></pre><p>3.生成静态页面，也就是你未来的blog网站，</p>
+<pre><code>$ hexo g
+</code></pre><p>##｛以下操作可跳过<br>       $ hexo s       启动服务器，尝试进入本地网站，正常的话可以访问：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> </p>
+<p>##以上操作可跳过｝</p>
+<p>4.配置本地网站中的_config.yml</p>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><pre><code>deploy:
+  type: git
+  repository: https://github.com/xucanbin/xucanbin.github.io.git
+  branch: master
+</code></pre><p>5.安装hexo的deployer插件（必须装的插件）</p>
+<pre><code>$ npm install hexo-deployer-git --save  (成功提示待测试)
+</code></pre><p>6.本地git仓库（这是把本地网站目录转换为git仓库的操作，我记得会有有一个.git）</p>
+<pre><code>$ git init &lt; 目录名&gt;    亦可进入目录下打开git bash 直接键入
+</code></pre><p>7.ssh密钥   (使用git-bash)</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your&apos;s emaill address&quot; 
+</code></pre><p>   引号内填入你注册时所用的邮箱，回车<br>   显示你ssh密钥生成后保存的目录，直接回车确认（记住目录名，后面要找它拿东西的）<br>   会提示你设置密码（需要输入两次，密码看不见的）设置完密码之后<br>   会生成两个文件&lt;id_rsa&gt;、&lt;id_rsa.pub&gt;<br>   前往目录寻找文件&lt;id_rsa.pub&gt;，使用sublime text3 打开，并复制所有内容<br>   将SSH密钥存入GitHub，附图片</p>
+<p>##（待上传）##<br>8.配置你个人的用户名称和电子邮件地址。这两条配置很重要，每次 Git 提交时都会引用这两条信息<br>      （在仓库目录下打开git-bash） </p>
+<pre><code>$ git config --global user.name &quot;Your&apos;s name&quot;           引号中填自己的GitHub账号
+$ git config --global user.email &quot;Your&apos;s email address&quot; 引号中填注册GitHub的邮箱
+$ git add README.md               将README.md添加到索引
+$ git commit -m &quot;first commit&quot;    记录对存储库的更改,使用给定的&quot;&quot;first commit&quot;&quot;作为提交消息
+</code></pre><p>9.添加git远程仓库（在仓库目录下打开git-bash）<br>  添加远程仓库</p>
+<pre><code>$ git remote add origin git@github.com:xucanbin/xucanbin.github.io.git
+</code></pre><p>10.推送到远程仓库（将 master 分支推送到 origin 服务器）（在仓库目录下打开git-bash）</p>
+<pre><code>$ git push origin master
+</code></pre><p>11.基于被配置完后的_config.yml,再次生成静态网页（在仓库目录下打开git-bash）</p>
+<pre><code>$hexo g
+</code></pre><p>12.将第二次生成的静态网页部署到git的远程仓库中（在仓库目录下打开git-bash）</p>
+<pre><code>$hexo d        后续弹出一个窗口 输入git用户名以及密码
+</code></pre><p>基础搭建完成<br>test目录下 f:\test\source_post\<br>上传文章的方法</p>
+<p>以后写的博客直接放在里面，格式要求 后缀的.md<br>git-bash下</p>
+<pre><code>$ hexo g
+$ hexo d
+$ git push origin master
+</code></pre><p>最后，打开自己的博客就能看到文章所在。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/guestbook/hexo个人blog搭建.html" data-id="cjjwdsxln0003toisr2zjc5sb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/22/个人blog搭建（纯属笔记，不做任何解释）/">个人blog搭建（纯属笔记，不做任何解释）</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/21/linux基础知识/">linux基础知识</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Souler<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
